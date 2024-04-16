@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* 1차 PJ : 메인페이지 CSS - main.css */
+
+/* 리셋, 코아, 커먼 공통 외부 CSS 합치기  */
+@import url(./reset.css);
+@import url(./core.css);
+@import url(./common.css);
+
+/* 그리드12 불러오기 */
+@import url(./grid_12_flex.css);
+
+/* 공사중 표시 */
+/* body * {
+    outline: 2px dashed #ccc;
+} */
+
+/* 1. 상단영역 */
+.top-area{
+    height: 120px;
+}
+
+/* 2. 배너영역 */
+.ban-area{
+    height: 700px;
+}
+/* 3. 컨텐츠영역 */
+.content-area{
+    height: 650px;
+}
+/* 4. 상품판매영역 */
+.goods-area{
+    height: 1043px;
+}
+/* 5. 테마별치즈영역 */
+.theme-cheese-area{
+    height: 1043px;
+}
+/* 6. 보너스클럽영역 */
+.club-area{
+    /* height: 760px; */
+}
+/* 7. 제품후기영역 */
+.review-goods-area{
+    height: 600px;
+}
+/* 8. 하단영역 */
+.footer-area{
+    height: 371px;
+}

@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* 1차 PJ : 공통 클래스 CSS - core.css */
+/* 공통 셋팅을 위한 클래스 + 웹폰트 */
+
+/* 웹폰트 CDN */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Gugi&family=Nanum+Gothic&family=Single+Day&family=ZCOOL+KuaiLe&display=swap');
+
+
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 
+    0. 메뉴 등 일반체
+    font-family: 'Noto Sans KR', sans-serif;
+    1. 캐릭터 설명 제목체
+    font-family: 'Gugi', cursive;
+    2. 캐릭터 설명 내용체
+    font-family: 'Single Day', cursive;
+    3. 캐릭터 설명 한자체
+    font-family: 'ZCOOL KuaiLe', cursive;
+    4. 전체 공통체(메뉴 등)
+    font-family: 'Nanum Gothic', sans-serif;
+    5. 배너영역 내용
+    font-family: 'S-CoreDream-3Light','SUITE-Regular';
+*/
+/*************************************** 공통 클래스 ***************************************/
+/* 전체 글자크기 */
+html{
+    font-size: 10px;
+
+    cursor: default;
+}
+
+
+/* 임시표시타이틀 */
+.temp-tit{
+    position: absolute;
+    font-size: 2vw;
+    color: #ccc;
+}
+
+/* 중앙 속박스 */
+.inbox{
+    /* 최대 가로크기 */
+    max-width: 1360px;
+    /* 블록박스 중앙정렬 */
+    margin: 0 auto;
+}
+
+.stit{
+    padding-top: 25px;
+    margin-left: 35px;
+    font-family: "S-CoreDream-3Light";
+    font-weight: normal;
+    font-size: 3.8rem;
+    white-space: nowrap;
+    text-align: center;
+}

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>치즈퀸 - 치즈판매 전문쇼핑몰</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 치즈퀸 파비콘 -->
+    <link
+      rel="shortcut icon"
+      href="/1차 프로젝트/0.3구현소스/images/micon.png"
+    />
+    <!-- 폰트어썸 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- 외부 CSS -->
+    <link rel="stylesheet" href="/1차 프로젝트/0.3구현소스/css/main.css" />
+    <!-- 외부JS 삽입 -->
+    <script
+      type="module"
+      src="./js/cont-box.js"
+    ></script>
+
+  </head>
+  <body>
+    <!-- 1. 상단영역 -->
+    <div id="top-area">
+      <header class="top-area inbox">
+        <!-- 1. 로고/GNB 파트 -->
+        <div class="cont-box">
+          <!-- 1-1. 로고 파트 -->
+          <div class="col-6">
+            <h1 class="mlogo">
+              <img src="./images/main_logo.png" alt="메인치즈퀸로고" />
+            </h1>
+          </div>
+          <!-- 1-2. GNB 파트 -->
+          <!-- TOP 영역 -->
+          <div class="col-6">
+            <nav class="top-menu">
+              <ul>
+                <li>
+                  <a
+                    href="#"
+                    class="fa-solid fa-magnifying-glass"
+                    alt="검색"
+                    onclick="document.querySelector('.search-box').classList.toggle('on')"
+                  ></a>
+                </li>
+                <li>
+                  <input type="text" class="search-box" />
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="fa-solid fa-cart-shopping"
+                    alt="장바구니"
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+            <!-- GNB 메뉴 -->
+            <nav class="gnb">
+              <ul>
+                <li>
+                  <a href="#"><span>치즈의 세상</span></a>
+                  <div class="smenu">
+                    <ol>
+                      <li>
+                        <a href="#">치즈퀸 베스트 10</a>
+                      </li>
+                      <li>
+                        <a href="#">치즈퀸 신상품</a>
+                      </li>
+                      <li>
+                        <a href="#">추천별 치즈 테마</a>
+                      </li>
+                    </ol>
+                  </div>
+                </li>
+                <li>
+                  <a href="#"><span>이벤트</span></a>
+                  <div class="smenu">
+                    <ol>
+                      <li>
+                        <a href="#">치즈퀸 세일 모아보기</a>
+                      </li>
+                      <li>
+                        <a href="#">기한 임박 할인</a>
+                      </li>
+                      <li>
+                        <a href="#">선물하기</a>
+                      </li>
+                    </ol>
+                  </div>
+                </li>
+                <li>
+                  <a href="#"><span>보너스 클럽</span></a>
+                  <div class="smenu">
+                    <ol>
+                      <li>
+                        <a href="#">무료배송 클럽</a>
+                      </li>
+                      <li>
+                        <a href="#">비즈니스 클럽</a>
+                      </li>
+                    </ol>
+                  </div>
+                </li>
+                <li>
+                  <a href="#"><span>제품 후기</span></a>
+                </li>
+                <li>
+                  <a href="#"><span>로그인</span></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <!-- 2. 배너영역 -->
+    <div id="ban-area">
+      <section class="ban-area inbox">
+        <h2 class="temp-tit"></h2>
+        <div class="cont-box">
+          <div class="col-12">
+            <!-- 메인이미지 -->
+            <div class="ibanner-box"></div>
+            <!-- 메인텍스트 -->
+            <div class="itxt-box">
+              <div class="itxt-box1">당신을 위해 고르고 고른 치즈</div>
+              <div class="itxt-box2">CheeseQueen</div>
+              <div class="itxt-box3">
+                기분좋은 가격♡맛좋은 먹을거리 <br />
+                새로운 제안♡행복한 식탁, 치즈퀸의 기쁨입니다!
+              </div>
+              <div class="itxt-box4">치즈 구매</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 3. 컨텐츠영역 -->
+    <div id="content-area">
+      <section class="content-area-inbox">
+        <h2 class="temp-tit"></h2>
+        <div class="cont-box">
+          <div class="col-12">
+            <section id="container">
+              <!--탑영역-->
+              <header class="header-info">
+                <li>
+                  <img src="./images/cont_area_00.png" alt="공지" />
+                  <h3>[공지] [배송]2024 삼일절 배송 안내</h3>
+                  <p>
+                    [공지] [배송] 2024 설 명절 배송 안내
+                    <br />
+                    [공지] [배송] 2023-2024 연말연시 배송 안내
+                    <br />
+                    [공지] [배송] 2023 크리스마스 배송 안내
+                  </p>
+                </li>
+                <li>
+                  <img src="./images/cont_area_01.png" alt="질문" />
+                  <p>
+                    [결제] 로그인하면 네이버(N)페이 버튼이 안...
+                    <br />
+                    [배송] 당일발송 마감 시각은 언제인가요?
+                    <br />
+                    [배송] 치즈퀸은 로젠택배와 한진택배를 이용...
+                    <br />
+                    [배송] 제주도 사는데, 금요일날 주문해도...
+                  </p>
+                </li>
+              </header>
+              <!--슬라이드 배너 영역-->
+              <section>
+                <!--슬라이드-->
+                <ul id="slide-box"></ul>
+                <!--이동버튼-->
+                <a href="#" class="abtn ab1"
+                  ><img src="images/left_btn.png" alt="왼쪽이동버튼"
+                /></a>
+                <a href="#" class="abtn ab2"
+                  ><img src="images/right_btn.png" alt="오른쪽이동버튼"
+                /></a>
+                <!--블릿버튼-->
+                <ol class="indic"></ol>
+              </section>
+            </section>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 4. 상품판매영역 -->
+    <div id="goods-area">
+      <section class="goods-area-inbox">
+        <h2 class="temp-tit"></h2>
+        <div class="cont-box">
+          <div class="col-12">
+            <ul class="search-tag-bar">
+              <li>Queen's Pick</li>
+              <li>치즈 초보자 추천</li>
+              <li>보관 편한 소분 포장</li>
+            </ul>
+            <ul class="goods-bar">
+              <li class="goods-box">
+                <div class="wrap"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 5. 테마별치즈영역 -->
+    <div id="theme-cheese-area">
+      <section class="theme-cheese-area-inbox">
+        <h2 class="temp-tit">테마별 치즈</h2>
+        <div class="cont-box">
+          <div class="col-12 cheese-box-wrap">
+            <h3>카테고리</h3>
+            <ul class="cheese-box">
+              <li class="cheese-cate">
+                <span class="cheese-cate01">
+                  <a>자연 치즈</a>
+                  <img src="./images/cheese-cate01.png" />
+                </span>
+              </li>
+              <li class="cheese-cate">
+                <span class="cheese-cate02">
+                  <a>크림 치즈</a>
+                  <img src="./images/cheese-cate02.png" />
+                </span>
+              </li>
+              <li class="cheese-cate">
+                <span class="cheese-cate03">
+                  <a>가공 치즈</a>
+                  <img src="./images/cheese-cate03.png" />
+                </span>
+              </li>
+              <li class="cheese-cate">
+                <span class="cheese-cate04">
+                  <a>모짜렐라</a>
+                  <img src="./images/cheese-cate04.png" />
+                </span>
+              </li>
+              <li class="cheese-cate">
+                <span class="cheese-cate05">
+                  <a>버터&크림</a>
+                  <img src="./images/cheese-cate05.png" />
+                </span>
+              </li>
+              <li class="cheese-cate">
+                <span class="cheese-cate06">
+                  <a>슬라이스 치즈</a>
+                  <img src="./images/cheese-cate06.png" />
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 6. 보너스클럽영역 -->
+    <div id="club-area">
+      <section class="club-area-inbox">
+        <!-- 무료배송 클럽 파트 -->
+        <div class="club-each">
+          <h2 class="stit">무료 배송 클럽</h2>
+          <div class="cont-box">
+            <div class="col-6 free-box"></div>
+          </div>
+        </div>
+        <!-- 비즈니스 보너스 파트 -->
+        <div class="club-each">
+          <h3 class="stit">비즈니스 보너스 클럽</h3>
+          <div class="cont-box">
+            <div class="col-3 business-box"></div>
+          </div>
+        </div>
+        <!-- 유의 사항 파트 -->
+        <div class="club-each">
+          <h4 class="stit">유의 사항</h4>
+          <div class="cont-box">
+            <div class="cinfo-box col-3 "></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 7. 제품후기영역 -->
+    <div id="review-area">
+      <section class="review-goods-area-inbox">
+        <h2 class="stit">제품 후기</h2>
+        <div class="cont-box">
+          <div class="col-12 review-box"></div>
+          <!-- 이동 버튼 -->
+          <div class="reveiw-btn-box">
+            <ul class="rbtn-rb1">
+              <button class="fa-solid fa-chevron-left"></button>
+            </ul>
+            <ul class="rbtn-rb2">
+              <button class="fa-solid fa-chevron-right"></button>
+            </ul>
+	        </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 8. 하단영역 -->
+    <div id="footer-area">
+      <footer class="footer-area-inbox">
+        <h2 class="temp-tit"></h2>
+        <div class="cont-box">
+          <!-- 하단 영역 -->
+          <div class="col-12">
+            <aside class="info-link">
+              <ul>
+                <li>
+                  <a href="#" onclick="return false;">회사소개</a>
+                </li>
+                <li>
+                  <a href="#" onclick="return false;">광고/제휴문의</a>
+                </li>
+                <li>
+                  <a href="#" onclick="return false;">이용약관</a>
+                </li>
+                <li>
+                  <a href="#" onclick="return false;">개인정보 처리방침</a>
+                </li>
+                <li>
+                  <a href="#" onclick="return false;">청소년보호정책</a>
+                </li>
+                <li>
+                  <a href="#" onclick="return false;">법적고지</a>
+                </li>
+                <li>
+                  <a href="#" onclick="return false;">이메일무단수집거부</a>
+                </li>
+                <li>
+                  <a href="#" onclick="return false;">고객센터</a>
+                </li>
+                <li>
+                  <a href="#" onclick="return false;">공지사항</a>
+                </li>
+              </ul>
+            </aside>
+          </div>
+          <!-- 하단 로고 박스 영역 -->
+          <div class="col-12">
+            <!-- 하단로고 -->
+            <h1 class="footer_logo">
+              <img src="./images/mark_1.png" alt="하단로고"/>
+            </h1>
+          </div>
+          <!-- 회사 주소 박스 영역 -->
+          <div class="col-4">
+            <address class="corp-info">
+              사업자등록번호 : 403-15-87592 [치즈퀸] <br />
+              대표 : 김민수, 유민 <br />
+              주소 : 경기도 하남시 광암로176번길 72 <br />
+              통신 판매업 신고 : 제2020-경기하남-1598호 <br />
+              정보 관리 책임자 : 유민 <br/>
+              contact : 2cheesequeen@gmail.com for more information
+            </address>
+            <!-- SNS 박스 영역 -->
+            <div class="col-4">
+              <aside class="sns-box">
+                <ul>
+                  <li>
+                    <a href="#" class="fa-brands fa-instagram">
+                      <span class="ir"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="fa-brands fa-facebook">
+                      <span class="ir"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="fa-brands fa-twitter">
+                      <span class="ir"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="fa-brands fa-youtube">
+                      <span class="ir"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="fa-solid fa-play">
+                      <span class="ir"></span>
+                    </a>
+                  </li>
+                </ul>
+              </aside>
+            </div>
+          </div>
+          <!-- 결제 영역 -->
+          <div class="pay-area col-4">
+            <aside class="pay-brand">
+              <img src="./images/pay_img01.png" alt="전자결제"/>
+              <img src="./images/pay_img02.png" alt="에스크로"/>
+            </aside>
+            <aside class="pay-co">
+              <img src="./images/pay_img03.png" alt="예금주"/>
+            </aside>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
